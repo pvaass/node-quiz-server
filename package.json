@@ -1,0 +1,48 @@
+{
+    "name": "quiz",
+    "version": "0.1.0",
+    "node-remote": [],
+    "webkit": {
+        "plugin": false,
+        "double_tap_to_zoom_enabled": false
+    },
+    "nodejs": true,
+    "main": "quiz-frontend/quiz.html",
+    "additional_trust_anchors": [],
+    "app_name": "quiz",
+    "window": {
+        "fullscreen": false,
+        "kiosk": false,
+        "visible": true,
+        "visible_on_all_workspaces": false,
+        "kiosk_emulation": false,
+        "as_desktop": false,
+        "resizable": false,
+        "frame": true,
+        "transparent": false,
+        "width": 640,
+        "height": 480,
+        "show": true,
+        "always_on_top": false,
+        "id": "quiz",
+        "title": "quiz",
+        "show_in_taskbar": true
+    },
+    "node-main": "node-quiz-server/src/bootstrap.js",
+    "webexe_settings": {
+        "linux-x32": false,
+        "force_download": false,
+        "nw_version": "0.17.0-beta2",
+        "mac-x64": false,
+        "download_dir": "/home/peter/.local/share/Web2Executable/files/downloads",
+        "export_dir": "output",
+        "windows-x32": false,
+        "custom_script": "",
+        "output_pattern": "",
+        "uncompressed_folder": false,
+        "sdk_build": false,
+        "nw_compression_level": 0,
+        "linux-x64": true,
+        "windows-x64": true
+    }
+}

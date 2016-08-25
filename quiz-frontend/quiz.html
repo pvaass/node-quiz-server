@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>WebSockets - Simple chat</title>
+
+        <style>
+        html, body{
+          background: #262626;
+          margin: 0;
+        }
+        .items {
+        	display: flex;
+        	flex-wrap: wrap;
+          height: auto;
+          width:100%;
+          overflow:hidden;
+          justify-content: center;
+          margin-top: 4vh;
+        }
+        .items .item {
+        	flex: 0 0 24vw;
+          height: 24vw;
+          box-sizing: border-box;
+          background: rgb(0, 106, 193);
+          color: #171e42;
+          opacity: 0.3;
+          text-align: center;
+          overflow: hidden;
+        }
+        .items .item div {
+          margin-top: 30px;
+        }
+
+        .item:nth-child(1){
+          background: rgb(243, 178, 0);
+        }
+        .item:nth-child(2){
+          background: rgb(99, 47, 0);
+        }
+        .item:nth-child(3){
+          background: rgb(70, 23, 180);
+        }
+        .item:nth-child(4){
+          background: rgb(119, 185, 0);
+        }
+        .item:nth-child(5){
+          background: rgb(176, 30, 0);
+        }
+        .item:nth-child(6){
+          background: rgb(0, 106, 193);
+        }
+        .item:nth-child(7){
+          background: rgb(193, 0, 79);
+        }
+        .item:nth-child(8){
+          background: rgb(0, 130, 135);
+        }
+        .reset {
+          cursor: pointer;
+          width: 100%;
+          text-align: center;
+          color: grey;
+        }
+        .reset h1, .reset h3 {
+          padding-top: 1vw;
+          transition: color 0.3s;
+        }
+        .reset:hover, .reset h1:hover {
+          color: white;
+        }
+
+
+        .items .item.pressed {
+          font-weight: bold;
+          color: white;
+          opacity: 1;
+        }
+
+        .place {
+          font-size: 5em;
+        }
+        </style>
+    </head>
+    <body>
+      <div class="items">
+        <div class="item" data-group="1">
+          <div>Groep 1</div>
+          <div class="place"></div>
+        </div>
+        <div class="item" data-group="2">
+          <div>Groep 2</div>
+          <div class="place"></div>
+        </div>
+        <div class="item" data-group="3">
+          <div>Groep 3</div>
+          <div class="place"></div>
+        </div>
+        <div class="item" data-group="4">
+          <div>Groep 4</div>
+          <div class="place"></div>
+        </div>
+        <div class="item" data-group="5">
+          <div>Groep 5</div>
+          <div class="place"></div>
+        </div>
+        <div class="item" data-group="6">
+          <div>Groep 6</div>
+          <div class="place"></div>
+        </div>
+        <div class="item" data-group="7">
+          <div>Groep 7</div>
+          <div class="place"></div>
+        </div>
+        <div class="item" data-group="8">
+          <div></div>
+          <div class="place"></div>
+        </div>
+      </div>
+
+      <div class="reset">
+        <h1> RESET KNOPPEN </h1>
+        <h3> (spatie) </h3>
+      </div>
+      <script src="http:////ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+      <script src="./frontend.js"></script>
+    </body>
+</html>

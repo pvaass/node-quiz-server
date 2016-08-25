@@ -1,0 +1,3 @@
+output/*
+node-quiz-server/node_modules/*
+node-quiz-server/npm-debug.log
